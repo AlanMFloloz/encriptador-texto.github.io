@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/aluraLogo.png" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Challenge Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="imagenes/Logo.svg" alt="logo-alura">
+    </header>
+
+    <main>
+        <div class="contenedor-maestro">
+            <section class="seccion-uno">
+                <div class="contenedor-cajatexto">
+                    <textarea name="text" class="cajatexto" cols=35" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                <div class="alerta">
+                    <img src="imagenes/alerta.svg" alt="alerta-icon">
+                    <p>Únicamente minúsculas, sin acentos y espacios</p>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    <button class="btn-reiniciar" onclick="btnReiniciar()">Recargar</button>
+                </div>
+            </section>
+    
+            <section class="seccion-dos">
+                <div class="contenedor-resultado">
+                    <textarea class="mensaje-resultado" cols="18" rows="8"></textarea>
+                </div>
+                <div class="contenedor-munheco">
+                    <img class="munheco" src="imagenes/Muñeco.svg" alt="munheco-alura">
+                </div>
+                <div class="contenedor-parrafo">
+                    <h3>Ningun mensaje fue encontrado</h3>
+                    <p class="parrafo-texto">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                <div class="contenedor-copiar">
+                    <button class="btn-copiar" onclick="copiar()">Copiar</button>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer-text">
+        <p>Encriptador de texto por Alan Flores - Alura Latam - Oracle</p>
+        
+        <a class="github-link" id="github" href="https://github.com/AlanMFloloz?tab=repositories" target="_blank"> <img class="github-image" src="imagenes/github.svg" alt=""> AlanMFloloz</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

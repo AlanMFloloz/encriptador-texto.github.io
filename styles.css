@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'inter';
+}
+
+body{
+    background-color: #F4F4FC;
+    font-family: 'inter';
+}
+
+header{
+    width: 100%;
+    height: 70px;
+}
+
+/* La siguiente linea de código funciona para ocultar los bordes externos del textarea al momento de pasar el cursor sobre el mismo, ademas con el !important le decimos que es un css primordial*/
+textarea:focus{
+    outline: none !important;
+}
+
+.logo{
+    width: 160px;
+    height: 100px;
+    padding-top: 28px;
+    padding-left: 40px;
+}
+
+.contenedor-maestro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.cajatexto{
+    background-color: #F4F4FC;
+    margin-top: 35px;
+    margin-left: 100px;
+    color: #0A3871;
+    font-size: 32px;
+    font-weight: 400;
+    padding: 20px;
+    border: none;
+    resize: none;
+    font-family: 'inter';
+}
+
+.cajatexto:hover{
+    border: none;
+}
+
+.alerta{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-left: 40%;
+    margin-top: 25px;
+    color: #495057;
+}
+
+.botones{
+    margin-top: 35px;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+.btn-encriptar{
+    border-radius: 24px;
+    font-size: 24px;
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+    margin-left: 40px;
+    color: white;
+    width: 255px;
+    height: 67px;
+    background-color: #0A3871;
+}
+
+.btn-desencriptar{
+    width: 255px;
+    height: 67px;
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    font-size: 24px;
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+    margin-left: 40px;
+    color: #0A3871;
+}
+
+.seccion-dos{
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    border: none;
+    width: 600px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+    margin-top: 20px;
+    margin-left: 85px;
+}
+
+.contenedor-parrafo{
+    text-align: center;
+    padding: 20px;
+    font-family: 'inter';
+}
+
+.parrafo-texto{
+    margin: 20px;
+    font-size: 14px;
+}
+
+.contenedor-munheco{
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.btn-copiar{
+    width: 200px;
+    height: 50px;
+    border-radius: 24px;
+    margin-left: 35%;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.mensaje-resultado{
+    margin-left: 40px;
+    margin-top: 25px;
+    border: none;
+    font-size: 32px;
+    font-weight: 400;
+    color: #0A3871;
+    border: none;
+    margin-bottom: 55px;
+}
+
+.btn-reiniciar{
+    border-radius: 24px;
+    font-size: 24px;
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+    margin-left: 40px;
+    color: white;
+    width: 255px;
+    height: 67px;
+    background-color: #0A3871;
+    margin-top: 15px;
+    display: none;
+    margin-left: 20%;
+}
+
+.mensaje-resultado{
+    display: none;
+    resize: none;
+    font-family: 'inter';
+}
+
+.footer-text{
+    text-align: center;
+    margin-top: 25px;
+    color: #0A3871;
+    font-weight: italic;
+    font-family: 'inter';
+}
+
+.github-link{
+    text-decoration: none;
+    color: #0A3871;
+}
+
+.github-image{
+    height: 20px;
+}
+
+@media screen and (max-width:400px){
+    .contenedor-maestro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cajatexto{
+        width: 200px;
+        height: 250px;
+    }
+
+    .btn-copiar{
+        width: 100px;
+    }
+    .btn-encriptar{
+        margin-bottom: 15px;
+    }
+    .btn-reiniciar{
+        width: 200px;
+    }
+
+    .seccion-dos{
+        width: 300px;
+        height: 200px;
+        padding-bottom: 500px;
+        margin-left: 55px;
+    }
+
+    .mensaje-resultado{
+        width: 250px;
+    }
+
+    .contenedor-munheco{
+        margin-right: 450px;
+    }
+    .munheco{
+        height: 150px;
+        justify-content: center;
+        width: 100px;
+    }
+    .alerta p{
+        text-align: center;
+        margin-right: 85px;
+        font-size: 14px;
+    }
+    footer{
+        margin-bottom: 15px;
+    }
+}
